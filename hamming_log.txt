@@ -498,3 +498,95 @@ Syndrome (binary): 0001
 Syndrome (decimal): 1
 Corrected Data: 111101110111
 
+=== Hamming Code Generation ===
+Original Data: 10100011
+Generated Hamming Code: 101000010100
+
+=== Hamming Code Generation ===
+Original Data: 10100011
+Generated Hamming Code: 101000010100
+
+=== Error Injection & Correction ===
+Injected Error at Bit Position: 1
+Corrupted Data: 101000010101
+Syndrome (binary): 0001
+Syndrome (decimal): 1
+Corrected Data: 101000010100
+
+=== Hamming Code Generation ===
+Original Data: 10100011
+Generated Hamming Code: 101000010100
+
+=== Error Injection & Correction ===
+Injected Error at Bit Position: 1
+Corrupted Data: 101000010101
+Syndrome (binary): 0001
+Syndrome (decimal): 1
+Corrected Data: 101000010100
+
+=== Hamming Code Generation ===
+Original Data: 1010001101011010
+Generated Hamming Code: 101000011010101011001
+
+=== Error Injection & Correction ===
+Injected Error at Bit Position: 11
+Corrupted Data: 101000011000101011001
+Syndrome (binary): 01011
+Syndrome (decimal): 11
+Corrected Data: 101000011010101011001
+
+=== Hamming Code Generation ===
+Original Data: 1010001101011010
+Generated Hamming Code: 101000011010101011001
+
+=== Error Injection & Correction ===
+Injected Error at Bit Position: 11
+Corrupted Data: 101000011000101011001
+Syndrome (binary): 01011
+Syndrome (decimal): 11
+Corrected Data: 101000011010101011001
+
+=== Hamming Code Generation ===
+Original Data: 11100111
+Generated Hamming Code: 111010111101
+
+=== Error Injection & Correction ===
+Injected Error at Bit Position: 5
+Corrupted Data: 111010101101
+Syndrome (binary): 0101
+Syndrome (decimal): 5
+Corrected Data: 111010111101
+
+=== Hamming Code Generation ===
+Original Data: 11100111
+Generated Hamming Code: 111010111101
+
+=== Error Injection & Correction ===
+Injected Error at Bit Position: 5
+Corrupted Data: 111010101101
+Syndrome (binary): 0101
+Syndrome (decimal): 5
+Corrected Data: 111010111101
+
+=== Hamming Code Generation ===
+Original Data: 1110011110100011
+Generated Hamming Code: 111001111101010011110
+
+=== Error Injection & Correction ===
+Injected Error at Bit Position: 10
+Corrupted Data: 111001111100010011110
+Syndrome (binary): 01010
+Syndrome (decimal): 10
+Corrected Data: 111001111101010011110
+
+=== Hamming Code Generation ===
+Original Data: 1110011110100011
+Generated Hamming Code: 111001111101010011110
+
+=== Error Injection & Correction ===
+Injected Error at Bit Position: 7
+Corrupted Data: 111001111101011011110
+Syndrome (binary): 00111
+Syndrome (decimal): 7
+Corrected Data: 111001111101010011110
+

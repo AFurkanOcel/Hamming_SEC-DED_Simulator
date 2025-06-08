@@ -100,14 +100,14 @@ class HammingApp:
                 selectcolor=color
             ).pack(side=tk.LEFT, padx=10)
 
-        tk.Label(self.center_frame, text="Enter Binary Data (e.g., 10110011):", font=("Arial", 12), bg=color, fg="white").pack(pady=10)
+        tk.Label(self.center_frame, text="Enter Binary Data", font=("Arial", 12), bg=color, fg="white").pack(pady=10)
         self.entry = tk.Entry(self.center_frame, width=40, font=("Courier", 12))
         self.entry.pack()
 
         self.encode_button = tk.Button(self.center_frame, text="Generate Hamming Code", font=("Arial", 12), command=self.encode_data)
         self.encode_button.pack(pady=15)
 
-        tk.Label(self.center_frame, text="Flip bit at position (1 = rightmost):", font=("Arial", 12), bg=color, fg="white").pack()
+        tk.Label(self.center_frame, text="Flip bit at position", font=("Arial", 12), bg=color, fg="white").pack()
         self.error_entry = tk.Entry(self.center_frame, width=10, font=("Courier", 12))
         self.error_entry.pack()
 
