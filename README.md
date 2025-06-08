@@ -13,37 +13,20 @@ Bu proje, **Hamming SEC-DED (Single Error Correction - Double Error Detection)**
 
 ## 🖼️ Arayüzden Görüntüler
 
-Ekran görüntüleri ve demolar buraya eklenebilir.
+![1](https://github.com/user-attachments/assets/5b683778-4361-4866-b9e9-1e1968b85431)
 
-## 📁 Dosya Yapısı
+## ▶️ Uygulama Nasıl Kullanılır?
 
-- `hamming_sec_ded.py` — Uygulamanın ana Python dosyası (GUI ve mantık).
-- `settings.ico` — Uygulama simgesi.
+İkili (binary) verinizin uzunluğunu seçin.
 
-## 📦 Gereksinimler
+İkili verinizi buna göre girin.
 
-- Python 3.x
-- Tkinter (Python ile birlikte gelir)
+Kodlanmış veriyi almak için "Hamming Kodunu Oluştur" butonuna tıklayın.
 
-## ▶️ Uygulama Nasıl Çalıştırılır?
+İsteğe bağlı olarak, bir bitin konumunu girerek (1 = en sağdaki bit) bir hata enjekte edin.
 
-1. Bu depoyu klonlayın:
-    ```bash
-    git clone https://github.com/kullaniciadi/hamming-sec-ded-simulator.git
-    cd hamming-sec-ded-simulator
-    ```
+Program mümkünse hatayı tespit edip düzeltecektir.
+## 📽️ YouTube Demo Videosu
 
-2. Uygulamayı başlatın:
-    ```bash
-    python main.py
-    ```
-
-## 📌 Notlar
-
-- Şu anki sürümde veriler yalnızca **RAM** üzerinde tutulur. İstenirse kalıcı dosya kaydı (loglama, CSV’ye veri yazımı vs.) kolayca entegre edilebilir.
-- Uygulama, eğitim amaçlı veya hata düzeltme algoritmalarını görselleştirmek isteyen öğrenciler için uygundur.
-
-## 📜 Lisans
-
-Bu proje MIT lisansı ile lisanslanmıştır. Ayrıntılar için `LICENSE` dosyasına bakabilirsiniz.
-
+📺 Uygulamanın tanıtım ve kullanım videosu:  
+[👉 YouTube Demo İzle](https://www.youtube.com/watch?v=DEMO_VIDEO_LINK)
