@@ -590,3 +590,44 @@ Syndrome (binary): 00111
 Syndrome (decimal): 7
 Corrected Data: 111001111101010011110
 
+=== Hamming Code Generation ===
+Original Data: 10100011
+Generated Hamming Code: 101000010100
+
+=== Error Injection & Correction ===
+Injected Error at Bit Position: 4
+Corrupted Data: 101000011100
+Syndrome (binary): 0100
+Syndrome (decimal): 4
+Corrected Data: 101000010100
+
+=== Hamming Code Generation ===
+Original Data: 10100011
+Generated Hamming Code: 101000010100
+
+=== Hamming Code Generation ===
+Original Data: 1010001110100101
+Generated Hamming Code: 101000011101000101110
+
+=== Error Injection & Correction ===
+Injected Error at Bit Position: 6
+Corrupted Data: 101000011101000001110
+Syndrome (binary): 00110
+Syndrome (decimal): 6
+Corrected Data: 101000011101000101110
+
+=== Hamming Code Generation ===
+Original Data: 1010001110100101
+Generated Hamming Code: 101000011101000101110
+
+=== Error Injection & Correction ===
+Injected Error at Bit Position: 6
+Corrupted Data: 101000011101000001110
+Syndrome (binary): 00110
+Syndrome (decimal): 6
+Corrected Data: 101000011101000101110
+
+=== Hamming Code Generation ===
+Original Data: 10100011
+Generated Hamming Code: 101000010100
+
