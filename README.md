@@ -29,4 +29,4 @@ Program mümkünse hatayı tespit edip düzeltecektir.
 ## 📽️ YouTube Demo Videosu
 
 📺 Uygulamanın tanıtım ve kullanım videosu:  
-[👉 YouTube Demo İzle](https://www.youtube.com/watch?v=DEMO_VIDEO_LINK)
+[👉 YouTube Demo İzle](https://www.youtube.com/watch?v=rHKQKSCRnW0)
