@@ -193,3 +193,308 @@ Generated Hamming Code: 111011011100
 Original Data: 11101011
 Generated Hamming Code: 111011011100
 
+=== Hamming Code Generation ===
+Original Data: 11111111
+Generated Hamming Code: 111101110111
+
+Parity Calculation Steps:
+P1 controls bits [11, 9, 7, 5, 3, 1] -> parity: 1
+P2 controls bits [11, 10, 7, 6, 3, 2] -> parity: 1
+P4 controls bits [12, 7, 6, 5, 4] -> parity: 0
+P8 controls bits [12, 11, 10, 9, 8] -> parity: 0
+
+=== Error Injection & Correction ===
+Injected Error at Bit Position: 1
+Corrupted Data: 111101110110
+Syndrome (binary): 0001
+Syndrome (position): 1
+Corrected Data: 111101110111
+
+=== Error Injection & Correction ===
+Injected Error at Bit Position: 1
+Corrupted Data: 111101110110
+Syndrome (binary): 0001
+Syndrome (position): 1
+Corrected Data: 111101110111
+
+=== Error Injection & Correction ===
+Injected Error at Bit Position: 1
+Corrupted Data: 111101110110
+Syndrome (binary): 0001
+Syndrome (position): 1
+Corrected Data: 111101110111
+
+=== Error Injection & Correction ===
+Injected Error at Bit Position: 1
+Corrupted Data: 111101110110
+Syndrome (binary): 0001
+Syndrome (position): 1
+Corrected Data: 111101110111
+
+=== Hamming Code Generation ===
+Original Data: 11111111
+Generated Hamming Code: 111101110111
+
+Parity Calculation Steps:
+P1 controls bits [11, 9, 7, 5, 3, 1] -> parity: 1
+P2 controls bits [11, 10, 7, 6, 3, 2] -> parity: 1
+P4 controls bits [12, 7, 6, 5, 4] -> parity: 0
+P8 controls bits [12, 11, 10, 9, 8] -> parity: 0
+
+=== Hamming Code Generation ===
+Original Data: 11111111
+Generated Hamming Code: 111101110111
+
+Parity Calculation Steps:
+P1 controls bits [11, 9, 7, 5, 3, 1] -> parity: 1
+P2 controls bits [11, 10, 7, 6, 3, 2] -> parity: 1
+P4 controls bits [12, 7, 6, 5, 4] -> parity: 0
+P8 controls bits [12, 11, 10, 9, 8] -> parity: 0
+
+=== Hamming Code Generation ===
+Original Data: 11111111
+Generated Hamming Code: 111101110111
+
+Parity Calculation Steps:
+P1 controls bits [11, 9, 7, 5, 3, 1] -> parity: 1
+P2 controls bits [11, 10, 7, 6, 3, 2] -> parity: 1
+P4 controls bits [12, 7, 6, 5, 4] -> parity: 0
+P8 controls bits [12, 11, 10, 9, 8] -> parity: 0
+
+=== Hamming Code Generation ===
+Original Data: 11111111
+Generated Hamming Code: 111101110111
+
+Parity Calculation Steps:
+P1 controls bits [11, 9, 7, 5, 3, 1] -> parity: 1
+P2 controls bits [11, 10, 7, 6, 3, 2] -> parity: 1
+P4 controls bits [12, 7, 6, 5, 4] -> parity: 0
+P8 controls bits [12, 11, 10, 9, 8] -> parity: 0
+
+=== Hamming Code Generation ===
+Original Data: 11111111
+Generated Hamming Code: 111101110111
+
+Parity Calculation Steps:
+P1 controls bits [11, 9, 7, 5, 3, 1] -> parity: 1
+P2 controls bits [11, 10, 7, 6, 3, 2] -> parity: 1
+P4 controls bits [12, 7, 6, 5, 4] -> parity: 0
+P8 controls bits [12, 11, 10, 9, 8] -> parity: 0
+
+=== Error Injection & Correction ===
+Injected Error at Bit Position: 1
+Corrupted Data: 111101110110
+Syndrome (binary): 0001
+Syndrome (position): 1
+Corrected Data: 111101110111
+
+=== Error Injection & Correction ===
+Injected Error at Bit Position: 1
+Corrupted Data: 111101110110
+Syndrome (binary): 0001
+Syndrome (position): 1
+Corrected Data: 111101110111
+
+=== Hamming Code Generation ===
+Original Data: 11111111
+Generated Hamming Code: 111101110111
+
+Parity Calculation Steps:
+P1 controls bits [11, 9, 7, 5, 3, 1] -> parity: 1
+P2 controls bits [11, 10, 7, 6, 3, 2] -> parity: 1
+P4 controls bits [12, 7, 6, 5, 4] -> parity: 0
+P8 controls bits [12, 11, 10, 9, 8] -> parity: 0
+
+=== Error Injection & Correction ===
+Injected Error at Bit Position: 1
+Corrupted Data: 111101110110
+Syndrome (binary): 0001
+Syndrome (position): 1
+Corrected Data: 111101110111
+
+=== Error Injection & Correction ===
+Injected Error at Bit Position: 1
+Corrupted Data: 111101110110
+Syndrome (binary): 0001
+Syndrome (position): 1
+Corrected Data: 111101110111
+
+=== Hamming Code Generation ===
+Original Data: 11111111
+Generated Hamming Code: 111101110111
+
+Parity Calculation Steps:
+P1 controls bits [11, 9, 7, 5, 3, 1] -> parity: 1
+P2 controls bits [11, 10, 7, 6, 3, 2] -> parity: 1
+P4 controls bits [12, 7, 6, 5, 4] -> parity: 0
+P8 controls bits [12, 11, 10, 9, 8] -> parity: 0
+
+=== Error Injection & Correction ===
+Injected Error at Bit Position: 1
+Corrupted Data: 111101110110
+Syndrome (binary): 0001
+Syndrome (position): 1
+Corrected Data: 111101110111
+
+=== Hamming Code Generation ===
+Original Data: 11111111
+Generated Hamming Code: 111101110111
+
+Parity Calculation Steps:
+P1 controls bits [11, 9, 7, 5, 3, 1] -> parity: 1
+P2 controls bits [11, 10, 7, 6, 3, 2] -> parity: 1
+P4 controls bits [12, 7, 6, 5, 4] -> parity: 0
+P8 controls bits [12, 11, 10, 9, 8] -> parity: 0
+
+=== Hamming Code Generation ===
+Original Data: 11111111
+Generated Hamming Code: 111101110111
+
+Parity Calculation Steps:
+P1 controls bits [11, 9, 7, 5, 3, 1] -> parity: 1
+P2 controls bits [11, 10, 7, 6, 3, 2] -> parity: 1
+P4 controls bits [12, 7, 6, 5, 4] -> parity: 0
+P8 controls bits [12, 11, 10, 9, 8] -> parity: 0
+
+=== Error Injection & Correction ===
+Injected Error at Bit Position: 1
+Corrupted Data: 111101110110
+Syndrome (binary): 0001
+Syndrome (position): 1
+Corrected Data: 111101110111
+
+=== Hamming Code Generation ===
+Original Data: 11111111
+Generated Hamming Code: 111101110111
+
+Parity Calculation Steps:
+P1 controls bits [11, 9, 7, 5, 3, 1] -> parity: 1
+P2 controls bits [11, 10, 7, 6, 3, 2] -> parity: 1
+P4 controls bits [12, 7, 6, 5, 4] -> parity: 0
+P8 controls bits [12, 11, 10, 9, 8] -> parity: 0
+
+=== Hamming Code Generation ===
+Original Data: 11111111
+Generated Hamming Code: 111101110111
+
+Parity Calculation Steps:
+P1 controls bits [11, 9, 7, 5, 3, 1] -> parity: 1
+P2 controls bits [11, 10, 7, 6, 3, 2] -> parity: 1
+P4 controls bits [12, 7, 6, 5, 4] -> parity: 0
+P8 controls bits [12, 11, 10, 9, 8] -> parity: 0
+
+=== Error Injection & Correction ===
+Injected Error at Bit Position: 1
+Corrupted Data: 111101110110
+Syndrome (binary): 0001
+Syndrome (position): 1
+Corrected Data: 111101110111
+
+=== Hamming Code Generation ===
+Original Data: 11111111
+Generated Hamming Code: 111101110111
+
+Parity Calculation Steps:
+P1 controls bits [11, 9, 7, 5, 3, 1] -> parity: 1
+P2 controls bits [11, 10, 7, 6, 3, 2] -> parity: 1
+P4 controls bits [12, 7, 6, 5, 4] -> parity: 0
+P8 controls bits [12, 11, 10, 9, 8] -> parity: 0
+
+=== Hamming Code Generation ===
+Original Data: 10101100
+Generated Hamming Code: 101001101011
+
+=== Error Injection & Correction ===
+Injected Error at Bit Position: 1
+Corrupted Data: 101001101010
+Syndrome (binary): 0001
+Syndrome (decimal): 1
+Corrected Data: 101001101011
+
+=== Hamming Code Generation ===
+Original Data: 11111111
+Generated Hamming Code: 111101110111
+
+Parity Calculation Steps:
+P1 controls bits [11, 9, 7, 5, 3, 1] -> parity: 1
+P2 controls bits [11, 10, 7, 6, 3, 2] -> parity: 1
+P4 controls bits [12, 7, 6, 5, 4] -> parity: 0
+P8 controls bits [12, 11, 10, 9, 8] -> parity: 0
+
+=== Hamming Code Generation ===
+Original Data: 11111111
+Generated Hamming Code: 111101110111
+
+=== Error Injection & Correction ===
+Injected Error at Bit Position: 1
+Corrupted Data: 111101110110
+Syndrome (binary): 0001
+Syndrome (decimal): 1
+Corrected Data: 111101110111
+
+=== Hamming Code Generation ===
+Original Data: 10101100
+Generated Hamming Code: 101001101011
+
+=== Error Injection & Correction ===
+Injected Error at Bit Position: 1
+Corrupted Data: 101001101010
+Syndrome (binary): 0001
+Syndrome (decimal): 1
+Corrected Data: 101001101011
+
+=== Hamming Code Generation ===
+Original Data: 10101100
+Generated Hamming Code: 101001101011
+
+=== Error Injection & Correction ===
+Injected Error at Bit Position: 1
+Corrupted Data: 101001101010
+Syndrome (binary): 0001
+Syndrome (decimal): 1
+Corrected Data: 101001101011
+
+=== Hamming Code Generation ===
+Original Data: 10101100
+Generated Hamming Code: 101001101011
+
+=== Error Injection & Correction ===
+Injected Error at Bit Position: 1
+Corrupted Data: 101001101010
+Syndrome (binary): 0001
+Syndrome (decimal): 1
+Corrected Data: 101001101011
+
+=== Hamming Code Generation ===
+Original Data: 11001101
+Generated Hamming Code: 110001101101
+
+=== Error Injection & Correction ===
+Injected Error at Bit Position: 1
+Corrupted Data: 110001101100
+Syndrome (binary): 0001
+Syndrome (decimal): 1
+Corrected Data: 110001101101
+
+=== Hamming Code Generation ===
+Original Data: 11001101
+Generated Hamming Code: 110001101101
+
+=== Error Injection & Correction ===
+Injected Error at Bit Position: 1
+Corrupted Data: 110001101100
+Syndrome (binary): 0001
+Syndrome (decimal): 1
+Corrected Data: 110001101101
+
+=== Hamming Code Generation ===
+Original Data: 11111111
+Generated Hamming Code: 111101110111
+
+=== Error Injection & Correction ===
+Injected Error at Bit Position: 1
+Corrupted Data: 111101110110
+Syndrome (binary): 0001
+Syndrome (decimal): 1
+Corrected Data: 111101110111
+

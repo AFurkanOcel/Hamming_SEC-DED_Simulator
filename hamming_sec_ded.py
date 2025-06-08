@@ -117,6 +117,19 @@ class HammingApp:
         self.result_label = tk.Label(self.center_frame, text="", bg=color, fg="black", font=("Courier", 12), justify="left")
         self.result_label.pack(pady=10)
 
+        # Sağ üst köşeye kare şekilli yardım butonu (30x30 px)
+        help_button = tk.Button(
+            self.root,
+            text="?",
+            font=("Arial", 16),
+            fg="black",
+            bg="white",
+            relief="raised",
+            bd=2,
+            command=self.show_help
+        )
+        help_button.place(relx=1.0, rely=0.0, x=-10, y=10, width=30, height=30, anchor="ne")
+
     def encode_data(self):
         data = self.entry.get()
         expected_len = self.data_length.get()
@@ -173,6 +186,17 @@ class HammingApp:
             if syndrome_decimal != 0:
                 f.write(f"Corrected Data: {corrected}\n")
             f.write("\n")
+
+    def show_help(self):
+        messagebox.showinfo(
+            "Help",
+            "This application simulates Hamming SEC-DED coding.\n\n"
+            "1. Select the length of your binary data.\n"
+            "2. Enter your binary data accordingly.\n"
+            "3. Click 'Generate Hamming Code' to get the encoded data.\n"
+            "4. Optionally, flip a bit by entering its position (1 = rightmost) and inject an error.\n"
+            "5. The program will detect and correct the error if possible."
+        )
 
 # Uygulamayı başlat
 if __name__ == "__main__":
