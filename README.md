@@ -17,7 +17,7 @@ Ekran görüntüleri ve demolar buraya eklenebilir.
 
 ## 📁 Dosya Yapısı
 
-- `main.py` — Uygulamanın ana Python dosyası (GUI ve mantık).
+- `hamming_sec_ded.py` — Uygulamanın ana Python dosyası (GUI ve mantık).
 - `settings.ico` — Uygulama simgesi.
 
 ## 📦 Gereksinimler
