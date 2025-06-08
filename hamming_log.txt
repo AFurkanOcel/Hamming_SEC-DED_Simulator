@@ -1,0 +1,195 @@
+=== Hamming Code Generation ===
+Original Data: 10101010
+Generated Hamming Code: 101001011000
+
+=== Error Injection & Correction ===
+Injected Error at Bit Position: 1
+Corrupted Data: 101001011001
+Syndrome: 1
+Corrected Data: 101001011000
+
+=== Hamming Code Generation ===
+Original Data: 10101010
+Generated Hamming Code: 101001011000
+
+=== Hamming Code Generation ===
+Original Data: 10101010
+Generated Hamming Code: 101001011000
+
+=== Error Injection & Correction ===
+Injected Error at Bit Position: 1
+Corrupted Data: 101001011001
+Syndrome: 1
+Corrected Data: 101001011000
+
+=== Hamming Code Generation ===
+Original Data: 1010
+Generated Hamming Code: 1010010
+
+=== Hamming Code Generation ===
+Original Data: 11100111
+Generated Hamming Code: 111010111101
+
+=== Error Injection & Correction ===
+Injected Error at Bit Position: 1
+Corrupted Data: 111010111100
+Syndrome (binary): 0001
+Syndrome (decimal): 1
+Corrected Data: 111010111101
+
+=== Error Injection & Correction ===
+Injected Error at Bit Position: 11
+Corrupted Data: 101010111101
+Syndrome (binary): 1011
+Syndrome (decimal): 11
+Corrected Data: 111010111101
+
+=== Error Injection & Correction ===
+Injected Error at Bit Position: 10
+Corrupted Data: 110010111101
+Syndrome (binary): 1010
+Syndrome (decimal): 10
+Corrected Data: 111010111101
+
+=== Error Injection & Correction ===
+Injected Error at Bit Position: 0
+Corrupted Data: 111010111101
+Syndrome (binary): 0000
+Syndrome (decimal): 0
+
+=== Error Injection & Correction ===
+Injected Error at Bit Position: 0
+Corrupted Data: 111010111101
+Syndrome (binary): 0000
+Syndrome (decimal): 0
+
+=== Error Injection & Correction ===
+Injected Error at Bit Position: 1
+Corrupted Data: 111010111100
+Syndrome (binary): 0001
+Syndrome (decimal): 1
+Corrected Data: 111010111101
+
+=== Error Injection & Correction ===
+Injected Error at Bit Position: 11
+Corrupted Data: 101010111101
+Syndrome (binary): 1011
+Syndrome (decimal): 11
+Corrected Data: 111010111101
+
+=== Error Injection & Correction ===
+Injected Error at Bit Position: 11
+Corrupted Data: 101010111101
+Syndrome (binary): 1011
+Syndrome (decimal): 11
+Corrected Data: 111010111101
+
+=== Error Injection & Correction ===
+Injected Error at Bit Position: 11
+Corrupted Data: 101010111101
+Syndrome (binary): 1011
+Syndrome (decimal): 11
+Corrected Data: 111010111101
+
+=== Error Injection & Correction ===
+Injected Error at Bit Position: 111
+Corrupted Data: 111010111101
+Syndrome (binary): 0000
+Syndrome (decimal): 0
+
+=== Error Injection & Correction ===
+Injected Error at Bit Position: 11
+Corrupted Data: 101010111101
+Syndrome (binary): 1011
+Syndrome (decimal): 11
+Corrected Data: 111010111101
+
+=== Error Injection & Correction ===
+Injected Error at Bit Position: 110
+Corrupted Data: 111010111101
+Syndrome (binary): 0000
+Syndrome (decimal): 0
+
+=== Hamming Code Generation ===
+Original Data: 11101011
+Generated Hamming Code: 111011011100
+
+=== Error Injection & Correction ===
+Injected Error at Bit Position: 11
+Corrupted Data: 101011011100
+Syndrome (binary): 1011
+Syndrome (decimal): 11
+Corrected Data: 111011011100
+
+=== Hamming Code Generation ===
+Original Data: 11101011
+Generated Hamming Code: 111011011100
+
+=== Error Injection & Correction ===
+Injected Error at Bit Position: 1
+Corrupted Data: 111011011101
+Syndrome (binary): 0001
+Syndrome (decimal): 1
+Corrected Data: 111011011100
+
+=== Hamming Code Generation ===
+Original Data: 11101011
+Generated Hamming Code: 111011011100
+
+=== Error Injection & Correction ===
+Injected Error at Bit Position: 1
+Corrupted Data: 111011011101
+Syndrome (binary): 0001
+Syndrome (decimal): 1
+Corrected Data: 111011011100
+
+=== Error Injection & Correction ===
+Injected Error at Bit Position: 11
+Corrupted Data: 101011011100
+Syndrome (binary): 1011
+Syndrome (decimal): 11
+Corrected Data: 111011011100
+
+=== Error Injection & Correction ===
+Injected Error at Bit Position: 111
+Corrupted Data: 111011011100
+Syndrome (binary): 0000
+Syndrome (decimal): 0
+
+=== Error Injection & Correction ===
+Injected Error at Bit Position: 111
+Corrupted Data: 111011011100
+Syndrome (binary): 0000
+Syndrome (decimal): 0
+
+=== Error Injection & Correction ===
+Injected Error at Bit Position: 11111
+Corrupted Data: 111011011100
+Syndrome (binary): 0000
+Syndrome (decimal): 0
+
+=== Error Injection & Correction ===
+Injected Error at Bit Position: 11111
+Corrupted Data: 111011011100
+Syndrome (binary): 0000
+Syndrome (decimal): 0
+
+=== Hamming Code Generation ===
+Original Data: 11101011
+Generated Hamming Code: 111011011100
+
+=== Error Injection & Correction ===
+Injected Error at Bit Position: 1
+Corrupted Data: 111011011101
+Syndrome (binary): 0001
+Syndrome (decimal): 1
+Corrected Data: 111011011100
+
+=== Hamming Code Generation ===
+Original Data: 11101011
+Generated Hamming Code: 111011011100
+
+=== Hamming Code Generation ===
+Original Data: 11101011
+Generated Hamming Code: 111011011100
+

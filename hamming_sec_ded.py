@@ -17,7 +17,6 @@ def calculate_parity_bits(data_bits):
     m = len(data_bits)
     res = ''
 
-    # Parity bitleri için yer ayırma
     for i in range(1, m + r + 1):
         if i == 2 ** j:
             res = res + '0'
@@ -46,15 +45,16 @@ def detect_error(received):
     while (2 ** r) < n:
         r += 1
 
-    res = 0
+    binary_syndrome = ''
     for i in range(r):
         val = 0
         for j in range(1, n + 1):
             if j & (2 ** i) == (2 ** i):
-                val = val ^ int(received[-1 * j])
-        res += val * (10 ** i)
+                val ^= int(received[-1 * j])
+        binary_syndrome = str(val) + binary_syndrome
 
-    return int(str(res), 2)
+    decimal_syndrome = int(binary_syndrome, 2)
+    return decimal_syndrome, binary_syndrome
 
 # Bit çevirici (hata eklemek için)
 def flip_bit(data, pos):
@@ -70,11 +70,11 @@ class HammingApp:
     def __init__(self, root):
         self.root = root
         self.root.title("Hamming SEC-DED Code Simulator")
-        self.root.geometry("550x450")
+        self.root.geometry("570x480")
         self.root.minsize(460, 400)
         self.root.configure(bg=color)
 
-        self.data_length = tk.IntVar(value=8)  # Varsayılan olarak 8-bit seçili
+        self.data_length = tk.IntVar(value=8)
 
         self.init_ui()
 
@@ -82,10 +82,9 @@ class HammingApp:
             icon = PhotoImage(file="settings.ico")
             root.iconphoto(True, icon)
         except:
-            pass  # ikon bulunmazsa hata vermez
+            pass
 
     def init_ui(self):
-        # Ortalayıcı çerçeve
         self.center_frame = tk.Frame(self.root, bg=color)
         self.center_frame.pack(expand=True)
 
@@ -129,7 +128,6 @@ class HammingApp:
         self.encoded_data = calculate_parity_bits(data)
         self.result_label.config(text=f"Hamming Code: {self.encoded_data}")
 
-        # Log kaydı
         with open("hamming_log.txt", "a") as f:
             f.write("=== Hamming Code Generation ===\n")
             f.write(f"Original Data: {data}\n")
@@ -147,27 +145,32 @@ class HammingApp:
             return
 
         self.corrupted_data = flip_bit(self.encoded_data, bit_pos)
-        syndrome = detect_error(self.corrupted_data)
+        syndrome_decimal, syndrome_binary = detect_error(self.corrupted_data)
 
-        if syndrome != 0:
-            corrected = flip_bit(self.corrupted_data, syndrome)
+        if syndrome_decimal != 0:
+            corrected = flip_bit(self.corrupted_data, syndrome_decimal)
             message = (
                 f"Corrupted Data: {self.corrupted_data}\n"
-                f"Syndrome: {syndrome}\n"
+                f"Syndrome (binary): {syndrome_binary}\n"
+                f"Syndrome (position): {syndrome_decimal}\n"
                 f"Corrected Data: {corrected}"
             )
         else:
-            message = f"No Error Detected: {self.corrupted_data}"
+            message = (
+                f"No Error Detected:\n"
+                f"Data: {self.corrupted_data}\n"
+                f"Syndrome (binary): {syndrome_binary}"
+            )
 
         self.result_label.config(text=message)
 
-        # Log kaydı
         with open("hamming_log.txt", "a") as f:
             f.write("=== Error Injection & Correction ===\n")
             f.write(f"Injected Error at Bit Position: {bit_pos}\n")
             f.write(f"Corrupted Data: {self.corrupted_data}\n")
-            f.write(f"Syndrome: {syndrome}\n")
-            if syndrome != 0:
+            f.write(f"Syndrome (binary): {syndrome_binary}\n")
+            f.write(f"Syndrome (decimal): {syndrome_decimal}\n")
+            if syndrome_decimal != 0:
                 f.write(f"Corrected Data: {corrected}\n")
             f.write("\n")
 
