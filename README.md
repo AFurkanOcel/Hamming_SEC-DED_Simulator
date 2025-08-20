@@ -1,32 +1,40 @@
-# Hamming SEC-DED Kodlama ve Hata Düzeltme Simülatörü
+# Hamming SEC-DED Encoding and Error Correction Simulator
 
-Bu proje, **Hamming SEC-DED (Single Error Correction - Double Error Detection)** algoritmasını kullanarak ikili (binary) verilerin hem kodlanmasını hem de hata tespiti ve düzeltmesini gerçekleştiren bir Python Tkinter arayüz uygulamasıdır.
+This project is a **Python Tkinter GUI application** that performs encoding and error detection/correction of binary data using the **Hamming SEC-DED (Single Error Correction - Double Error Detection)** algorithm.
 
-## 🔧 Özellikler
+---
 
-- Kullanıcıdan 4, 8, 16, 32 veya 64 bit uzunluğunda ikili veri girişi alınır.
-- Hamming kodu (eşlik bitleriyle) oluşturulur.
-- İstenilen bir bit konumunda hata simülasyonu yapılabilir (bit flip).
-- Hata varsa tespit edilir, hatalı bit pozisyonu (sendrom) belirlenir ve düzeltilmiş veri gösterilir.
-- Tüm işlemler kullanıcı dostu bir grafik arayüz (GUI) üzerinden yapılır.
-- Tkinter kullanılarak geliştirilmiştir.
+## 🚀 Features
 
-## 🖼️ Arayüzden Görüntüler
+- ✅ Accepts binary input of lengths: **4, 8, 16, 32, 64 bits**  
+- ✅ Generates the Hamming code (with parity bits)  
+- ✅ Allows error simulation by flipping a specific bit position  
+- ✅ Detects errors and shows the **syndrome** (error position)  
+- ✅ Corrects single-bit errors automatically  
+- ✅ Built with **Python + Tkinter GUI**  
 
-![1](https://github.com/user-attachments/assets/5b683778-4361-4866-b9e9-1e1968b85431)
+---
 
-## ▶️ Uygulama Nasıl Kullanılır?
+## 📸 Screenshots
 
-İkili (binary) verinizin uzunluğunu seçin.
+![App Screenshot](https://github.com/user-attachments/assets/5b683778-4361-4866-b9e9-1e1968b85431)
 
-İkili verinizi buna göre girin.
+---
 
-Kodlanmış veriyi almak için "Hamming Kodunu Oluştur" butonuna tıklayın.
+## 🖥️ How to Use
 
-İsteğe bağlı olarak, bir bitin konumunu girerek (1 = en sağdaki bit) bir hata enjekte edin.
+1. Select the **data length** (4, 8, 16, 32, or 64 bits).  
+2. Enter your **binary data**.  
+3. Click **"Generate Hamming Code"** to encode the input.  
+4. (Optional) Inject an error by entering a bit position (e.g., `1` = rightmost bit).  
+5. The program will:  
+   - Detect the error (if any)  
+   - Show the syndrome (bit position)  
+   - Correct the error and display the fixed code  
 
-Program mümkünse hatayı tespit edip düzeltecektir.
-## 📽️ YouTube Demo Videosu
+---
 
-📺 Uygulamanın tanıtım ve kullanım videosu:  
-[👉 YouTube Demo İzle](https://www.youtube.com/watch?v=rHKQKSCRnW0)
+## 📽️ Demo Video
+
+▶️ Watch the demo video on YouTube:  
+[👉 Hamming SEC-DED Demo](https://www.youtube.com/watch?v=rHKQKSCRnW0)
