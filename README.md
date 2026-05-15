@@ -1,40 +1,164 @@
 # Hamming SEC-DED Encoding and Error Correction Simulator
 
-This project is a **Python Tkinter GUI application** that performs encoding and error detection/correction of binary data using the **Hamming SEC-DED (Single Error Correction - Double Error Detection)** algorithm.
+This project is a desktop application developed with **Python** and **Tkinter** to simulate **Hamming SEC-DED (Single Error Correction – Double Error Detection)** encoding, transmission error injection, and automatic error correction of binary data.
+
+It provides an interactive environment to understand how **error-correcting codes** are used in digital systems and communication protocols.
 
 ---
 
-## 🚀 Features
+## Overview
 
-- ✅ Accepts binary input of lengths: **4, 8, 16, 32, 64 bits**  
-- ✅ Generates the Hamming code (with parity bits)  
-- ✅ Allows error simulation by flipping a specific bit position  
-- ✅ Detects errors and shows the **syndrome** (error position)  
-- ✅ Corrects single-bit errors automatically  
-- ✅ Built with **Python + Tkinter GUI**  
+Hamming codes are widely used in:
 
----
+- Digital communication systems
+- ECC memory systems
+- Network transmission
+- Fault-tolerant computing
 
-## 📸 Screenshots
+This simulator demonstrates the complete workflow:
 
-![App Screenshot](https://github.com/user-attachments/assets/5b683778-4361-4866-b9e9-1e1968b85431)
-
----
-
-## 🖥️ How to Use
-
-1. Select the **data length** (4, 8, 16, 32, or 64 bits).  
-2. Enter your **binary data**.  
-3. Click **"Generate Hamming Code"** to encode the input.  
-4. (Optional) Inject an error by entering a bit position (e.g., `1` = rightmost bit).  
-5. The program will:  
-   - Detect the error (if any)  
-   - Show the syndrome (bit position)  
-   - Correct the error and display the fixed code  
+1. Binary data input
+2. Hamming code generation
+3. Bit-flip error injection
+4. Syndrome calculation
+5. Error localization
+6. Automatic correction
 
 ---
 
-## 📽️ Demo Video
+## Project Structure
 
-▶️ Watch the demo video on YouTube:  
-[👉 Hamming SEC-DED Demo](https://www.youtube.com/watch?v=rHKQKSCRnW0)
+```text
+Hamming_SEC-DED_Simulator/
+│── .gitattributes
+│── hamming_log.txt
+│── hamming_sec_ded.py
+│── LICENSE
+│── README.md
+└── settings.ico
+```
+
+---
+
+## Features
+
+- Supports binary input lengths:
+  - `4-bit`
+  - `8-bit`
+  - `16-bit`
+  - `32-bit`
+  - `64-bit`
+
+- Generates Hamming encoded output with parity bits
+- Simulates transmission errors by flipping a selected bit
+- Detects errors using syndrome analysis
+- Automatically corrects single-bit errors
+- Displays syndrome in both **binary** and **decimal**
+- Built with an interactive **Tkinter GUI**
+- Includes built-in **Help** support
+- Logs all encoding and correction operations into `hamming_log.txt`
+
+---
+
+## Screenshot
+
+![Application Screenshot](https://github.com/user-attachments/assets/5b683778-4361-4866-b9e9-1e1968b85431)
+
+---
+
+## Demo Video
+
+Watch the demo on YouTube:  
+https://www.youtube.com/watch?v=rHKQKSCRnW0
+
+---
+
+## How to Run
+
+Clone the repository:
+
+```bash
+git clone https://github.com/AFurkanOcel/Hamming_SEC-DED_Simulator.git
+cd Hamming_SEC-DED_Simulator
+```
+
+Run the application:
+
+```bash
+python hamming_sec_ded.py
+```
+
+Requirements:
+
+```text
+Python 3.x
+```
+
+No external libraries are required.
+
+---
+
+## Example Workflow
+
+Input:
+
+```text
+10110011
+```
+
+Generated Hamming Code:
+
+```text
+001101100011
+```
+
+Inject Error at Bit Position:
+
+```text
+5
+```
+
+Detected Syndrome:
+
+```text
+5
+```
+
+Corrected Output:
+
+```text
+001101100011
+```
+
+---
+
+## Technical Details
+
+Core algorithm components:
+
+- Dynamic parity bit calculation
+- Hamming code generation
+- Syndrome-based error detection
+- Bit-flip based correction logic
+- GUI interaction with Tkinter
+
+---
+
+## Educational Purpose
+
+This project was developed to demonstrate the practical implementation of **Hamming error-correcting codes** and to visualize how modern computing systems detect and correct transmission errors.
+
+---
+
+## Future Improvements
+
+- Random multi-bit error simulation
+- Step-by-step parity visualization
+- Export results to file
+- Web-based implementation
+
+---
+
+## Author
+
+**A. Furkan ÖCEL**  
