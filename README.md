@@ -1,8 +1,16 @@
-# Hamming SEC-DED Encoding and Error Correction Simulator
+<h1 align="center">Hamming SEC-DED Simulator</h1>
 
-This project is a desktop application developed with **Python** and **Tkinter** to simulate **Hamming SEC-DED (Single Error Correction – Double Error Detection)** encoding, transmission error injection, and automatic error correction of binary data.
+<p align="center">
+Desktop-based Hamming SEC-DED encoding and error correction simulator built with Python and Tkinter.
+</p>
 
-It provides an interactive environment to understand how **error-correcting codes** are used in digital systems and communication protocols.
+<p align="center">
+  <img src="https://img.shields.io/badge/Language-Python-blue"/>
+  <img src="https://img.shields.io/badge/GUI-Tkinter-green"/>
+  <img src="https://img.shields.io/badge/Algorithm-Hamming%20SEC--DED-orange"/>
+  <img src="https://img.shields.io/badge/Platform-Desktop-lightgrey"/>
+  <img src="https://img.shields.io/badge/Status-Completed-brightgreen"/>
+</p>
 
 ---
 
