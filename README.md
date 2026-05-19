@@ -1,36 +1,44 @@
 <h1 align="center">Hamming SEC-DED Simulator</h1>
 
 <p align="center">
-Desktop-based Hamming SEC-DED encoding and error correction simulator built with Python and Tkinter.
+A desktop-based Hamming code simulator built with Python and Tkinter for encoding binary data, injecting bit errors, calculating syndrome values, and correcting single-bit transmission errors.
 </p>
 
 <p align="center">
   <img src="https://img.shields.io/badge/Language-Python-blue"/>
   <img src="https://img.shields.io/badge/GUI-Tkinter-green"/>
-  <img src="https://img.shields.io/badge/Algorithm-Hamming%20SEC--DED-orange"/>
+  <img src="https://img.shields.io/badge/Algorithm-Hamming%20Code-orange"/>
+  <img src="https://img.shields.io/badge/Error%20Handling-Single--Bit%20Correction-red"/>
   <img src="https://img.shields.io/badge/Platform-Desktop-lightgrey"/>
   <img src="https://img.shields.io/badge/Status-Completed-brightgreen"/>
 </p>
 
 ---
 
-## Overview
+## Project Overview
 
-Hamming codes are widely used in:
+**Hamming SEC-DED Simulator** is an educational desktop application that
+demonstrates the core workflow of Hamming-based error detection and correction.
+The application accepts binary input, generates a Hamming code, allows the user
+to flip a selected bit, calculates the syndrome value, and corrects the detected
+single-bit error.
 
-- Digital communication systems
-- ECC memory systems
-- Network transmission
-- Fault-tolerant computing
+The project is designed for learning and demonstration purposes, especially for
+students studying digital communication, error-correcting codes, computer
+architecture, or fault-tolerant systems.
 
-This simulator demonstrates the complete workflow:
+---
 
-1. Binary data input
-2. Hamming code generation
-3. Bit-flip error injection
-4. Syndrome calculation
-5. Error localization
-6. Automatic correction
+## Technologies Used
+
+| Technology | Purpose |
+|-----------|---------|
+| Python 3 | Main programming language |
+| Tkinter | Desktop graphical user interface |
+| Hamming Code | Error detection and single-bit correction logic |
+| Local text logging | Runtime operation history in `hamming_log.txt` |
+
+No external Python packages are required.
 
 ---
 
@@ -38,49 +46,93 @@ This simulator demonstrates the complete workflow:
 
 ```text
 Hamming_SEC-DED_Simulator/
-│── .gitattributes
-│── .gitignore
-│── assets/
-│   │── icons/
-│   │   └── settings.ico
-│   └── screenshots/
-│       └── application-screenshot.png
-│── hamming_sec_ded.py
-│── LICENSE
-│── README.md
+|-- .gitattributes
+|-- .gitignore
+|-- hamming_sec_ded.py
+|-- LICENSE
+|-- README.md
+|-- assets/
+|   |-- icons/
+|   |   `-- settings.ico
+|   `-- screenshots/
+|       `-- application-screenshot.png
 ```
+
+---
+
+## Main Components
+
+| Component | Responsibility |
+|----------|----------------|
+| `calculate_parity_bits()` | Calculates the required parity bits and generates the Hamming code |
+| `detect_error()` | Calculates the binary and decimal syndrome values from received data |
+| `flip_bit()` | Simulates a transmission error by flipping a selected bit |
+| `HammingApp` | Builds and controls the Tkinter user interface |
+| `hamming_log.txt` | Stores generated code, injected error, syndrome, and correction history |
 
 ---
 
 ## Features
 
-- Supports binary input lengths:
+- Desktop GUI built with Tkinter
+- Selectable input lengths:
   - `4-bit`
   - `8-bit`
   - `16-bit`
   - `32-bit`
   - `64-bit`
+- Binary input validation
+- Dynamic parity bit calculation
+- Hamming code generation
+- Manual bit-flip error injection
+- Syndrome calculation in binary and decimal form
+- Single-bit error localization
+- Automatic correction for detected single-bit errors
+- Built-in help dialog
+- Local runtime logging
+- Repository-managed screenshot and icon assets
 
-- Generates Hamming encoded output with parity bits
-- Simulates transmission errors by flipping a selected bit
-- Detects errors using syndrome analysis
-- Automatically corrects single-bit errors
-- Displays syndrome in both **binary** and **decimal**
-- Built with an interactive **Tkinter GUI**
-- Includes built-in **Help** support
-- Logs all encoding and correction operations into `hamming_log.txt`
+---
+
+## Application Workflow
+
+```text
+Select binary data length
+   |
+   v
+Enter binary data
+   |
+   v
+Generate Hamming code
+   |
+   v
+Enter bit position to flip
+   |
+   v
+Inject transmission error
+   |
+   v
+Calculate syndrome
+   |
+   v
+Locate and correct the single-bit error
+   |
+   v
+Write operation details to hamming_log.txt
+```
 
 ---
 
 ## Screenshot
 
-![Application Screenshot](assets/screenshots/application-screenshot.png)
+<img width="570" alt="Hamming SEC-DED Simulator desktop interface" src="assets/screenshots/application-screenshot.png" />
 
 ---
 
 ## Demo Video
 
-Watch the demo on YouTube:  
+Watch the demo on YouTube:
+
 https://www.youtube.com/watch?v=rHKQKSCRnW0
 
 ---
@@ -106,8 +158,6 @@ Requirements:
 Python 3.x
 ```
 
-No external libraries are required.
-
 ---
 
 ## Example Workflow
@@ -124,16 +174,23 @@ Generated Hamming Code:
 001101100011
 ```
 
-Inject Error at Bit Position:
+Injected Error Position:
 
 ```text
 5
 ```
 
+Corrupted Data:
+
+```text
+001101110011
+```
+
 Detected Syndrome:
 
 ```text
-5
+Binary: 0101
+Decimal: 5
 ```
 
 Corrected Output:
@@ -144,39 +201,70 @@ Corrected Output:
 
 ---
 
-## Technical Details
+## Error Logging
 
-Core algorithm components:
+The application writes runtime operation details to:
 
-- Dynamic parity bit calculation
-- Hamming code generation
-- Syndrome-based error detection
-- Bit-flip based correction logic
-- GUI interaction with Tkinter
+```text
+hamming_log.txt
+```
 
----
-
-## Educational Purpose
-
-This project was developed to demonstrate the practical implementation of **Hamming error-correcting codes** and to visualize how modern computing systems detect and correct transmission errors.
+The log file includes generated Hamming codes, injected error positions,
+corrupted data, syndrome values, and corrected output. Since this file is a
+local runtime output, it is ignored by Git.
 
 ---
 
-## Future Improvements
+## Algorithm Notes
 
-- Random multi-bit error simulation
-- Step-by-step parity visualization
-- Export results to file
-- Web-based implementation
+The simulator demonstrates the main ideas behind Hamming-code-based error
+handling:
+
+| Step | Description |
+|------|-------------|
+| Parity position selection | Reserves power-of-two positions for parity bits |
+| Parity calculation | Computes parity values over the related bit groups |
+| Syndrome generation | Recomputes parity checks from the received data |
+| Error localization | Converts the syndrome value into the detected bit position |
+| Correction | Flips the detected bit back to restore the original Hamming code |
+
+The current implementation focuses on single-bit error correction through
+syndrome analysis. Explicit double-error detection can be added in a future
+version by extending the encoded data with an overall parity bit.
+
+---
+
+## Syntax Verification
+
+The Python source file can be checked without generating cache files:
+
+```bash
+python -c "import ast, pathlib; ast.parse(pathlib.Path('hamming_sec_ded.py').read_text(encoding='utf-8'))"
+```
+
+A successful run produces no output and confirms that the source file is
+syntactically valid.
+
+---
+
+## Limitations and Future Work
+
+- Add explicit double-error detection with an overall parity bit
+- Move algorithm logic into a separate module if the project grows
+- Add automated tests for parity calculation, syndrome detection, and correction
+- Add random error generation for demonstration scenarios
+- Add step-by-step parity visualization
+- Add export options for generated results
 
 ---
 
 ## Author
 
-**A. Furkan ÖCEL**  
+**A. Furkan &Ouml;CEL**
 
 ---
 
 ## License
 
-This project is licensed under the terms included in the repository's `LICENSE` file.
+This project is licensed under the terms included in the repository's
+`LICENSE` file.
