@@ -39,11 +39,15 @@ This simulator demonstrates the complete workflow:
 ```text
 Hamming_SEC-DED_Simulator/
 │── .gitattributes
-│── hamming_log.txt
+│── .gitignore
+│── assets/
+│   │── icons/
+│   │   └── settings.ico
+│   └── screenshots/
+│       └── application-screenshot.png
 │── hamming_sec_ded.py
 │── LICENSE
 │── README.md
-└── settings.ico
 ```
 
 ---
@@ -70,7 +74,7 @@ Hamming_SEC-DED_Simulator/
 
 ## Screenshot
 
-![Application Screenshot](https://github.com/user-attachments/assets/5b683778-4361-4866-b9e9-1e1968b85431)
+![Application Screenshot](assets/screenshots/application-screenshot.png)
 
 ---
 

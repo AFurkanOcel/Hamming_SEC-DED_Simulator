@@ -1,0 +1,21 @@
+# Runtime logs
+*.log
+hamming_log.txt
+
+# Python cache and build artifacts
+__pycache__/
+*.py[cod]
+build/
+dist/
+*.egg-info/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Local editor and OS files
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
