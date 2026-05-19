@@ -170,3 +170,9 @@ This project was developed to demonstrate the practical implementation of **Hamm
 ## Author
 
 **A. Furkan ÖCEL**  
+
+---
+
+## License
+
+This project is licensed under the terms included in the repository's `LICENSE` file.
