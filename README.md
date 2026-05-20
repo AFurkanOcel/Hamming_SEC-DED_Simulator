@@ -27,6 +27,8 @@ The project is designed for learning and demonstration purposes, especially for
 students studying digital communication, error-correcting codes, computer
 architecture, or fault-tolerant systems.
 
+<img width="570" alt="Hamming SEC-DED Simulator desktop interface" src="assets/screenshots/application-screenshot.png" />
+
 ---
 
 ## Technologies Used
@@ -120,12 +122,6 @@ Locate and correct the single-bit error
    v
 Write operation details to hamming_log.txt
 ```
-
----
-
-## Screenshot
-
-<img width="570" alt="Hamming SEC-DED Simulator desktop interface" src="assets/screenshots/application-screenshot.png" />
 
 ---
 
