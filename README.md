@@ -55,9 +55,7 @@ Hamming_SEC-DED_Simulator/
 |-- README.md
 |-- assets/
 |   |-- icons/
-|   |   `-- settings.ico
 |   `-- screenshots/
-|       `-- application-screenshot.png
 ```
 
 ---
